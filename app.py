@@ -42,4 +42,4 @@ if Path(ZOO_FILE).exists():
             st.text(f"Started: {pet['start_date']}")
             st.text(f"Last Active: {pet['last_updated']}")
 else:
-    st.info("No pets yet! Run analyze.py after some activity to unlock your first pet.")
+    st.info("No pets yet! Run analyze.py after some activity to unlock your first pet")
