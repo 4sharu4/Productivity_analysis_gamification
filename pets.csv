@@ -1,2 +1,2 @@
-pet_id,pet_type,level,adopted_on,last_active,start_date,last_updated
-1,dragon,1,,,2025-08-21,2025-08-21
+pet_id,pet_type,level,start_date,last_updated,cumulative_minutes
+1,panda,1,2025-08-22,2025-08-22,93.5

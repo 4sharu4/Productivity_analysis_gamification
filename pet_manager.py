@@ -1,4 +1,3 @@
-# pet_manager.py
 from pathlib import Path
 import pandas as pd
 import random
@@ -6,19 +5,37 @@ from datetime import datetime
 
 ZOO_FILE = "pets.csv"
 PET_TYPES = ["cat", "dog", "panda", "fox", "turtle", "dragon"]  # match assets/<pet>_level*.gif
+MAX_LEVEL = 3
+EVOLUTION_THRESHOLD = 14 * 60  # 14 hours = 840 min
 
 def load_zoo():
     """Return pets DataFrame, or empty structured DF if file missing."""
     if Path(ZOO_FILE).exists():
         df = pd.read_csv(ZOO_FILE)
-        # ensure columns exist
-        expected = ["pet_id", "pet_type", "level", "start_date", "last_updated"]
-        for c in expected:
-            if c not in df.columns:
-                df[c] = None
-        return df
     else:
-        return pd.DataFrame(columns=["pet_id", "pet_type", "level", "start_date", "last_updated"])
+        df = pd.DataFrame(columns=[
+            "pet_id", "pet_type", "level",
+            "start_date", "last_updated", "cumulative_minutes"
+        ])
+
+    # Ensure required columns exist with defaults
+    if "pet_id" not in df.columns:
+        df["pet_id"] = []
+    if "pet_type" not in df.columns:
+        df["pet_type"] = []
+    if "level" not in df.columns:
+        df["level"] = []
+    if "start_date" not in df.columns:
+        df["start_date"] = []
+    if "last_updated" not in df.columns:
+        df["last_updated"] = []
+    if "cumulative_minutes" not in df.columns:
+        df["cumulative_minutes"] = []
+
+    # Default values
+    df["level"] = df["level"].fillna(1).astype(int)
+    df["cumulative_minutes"] = df["cumulative_minutes"].fillna(0.0).astype(float)
+    return df
 
 def save_zoo(df):
     """Save the zoo DataFrame to CSV."""
@@ -40,9 +57,7 @@ def choose_new_pet(existing_types):
     return random.choice(pool)
 
 def record_new_pet(df):
-    """
-    Add a new pet row to df, save, and return (df, pet_type, level).
-    """
+    """Add a new pet row to df, save, and return (df, pet_type, level)."""
     pet_type = choose_new_pet(list(df["pet_type"].astype(str).unique()))
     pet_id = _next_pet_id(df)
     today = datetime.now().strftime("%Y-%m-%d")
@@ -52,26 +67,32 @@ def record_new_pet(df):
         "level": 1,
         "start_date": today,
         "last_updated": today,
+        "cumulative_minutes": 0.0,
     }
     df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
     save_zoo(df)
     return df, pet_type, 1
 
-def level_up_last_pet(df):
-    """
-    Increment level of the most recent pet (by DataFrame order).
-    If no pet exists, create first pet.
-    Returns (df, pet_type, new_level).
-    """
+def update_pets(df, total_minutes, today_str):
+    """Distribute today's minutes across pets, evolve them if thresholds met."""
     if df.empty:
-        return record_new_pet(df)
-    last_idx = df.index.max()
-    try:
-        df.loc[last_idx, "level"] = int(df.loc[last_idx, "level"]) + 1
-    except Exception:
-        df.loc[last_idx, "level"] = 2
-    df.loc[last_idx, "last_updated"] = datetime.now().strftime("%Y-%m-%d")
-    pet_type = df.loc[last_idx, "pet_type"]
-    new_level = int(df.loc[last_idx, "level"])
+        print("No pets to update.")
+        return df
+
+    num_pets = len(df)
+    split_minutes = total_minutes / num_pets
+    print(f"Distributing {total_minutes} total minutes across {num_pets} pets ({split_minutes} each)")
+
+    for i in df.index:
+        print(f"Before: Pet {df.at[i, 'pet_type']} has {df.at[i, 'cumulative_minutes']:.2f} mins")
+        df.at[i, "cumulative_minutes"] += split_minutes
+        print(f"After: Pet {df.at[i, 'pet_type']} has {df.at[i, 'cumulative_minutes']:.2f} mins")
+
+        while df.at[i, "level"] < MAX_LEVEL and df.at[i, "cumulative_minutes"] >= EVOLUTION_THRESHOLD:
+            df.at[i, "level"] += 1
+            df.at[i, "cumulative_minutes"] -= EVOLUTION_THRESHOLD
+            df.at[i, "last_updated"] = today_str
+            print(f"⬆️ {df.at[i, 'pet_type']} leveled up to {df.at[i, 'level']}")
+
     save_zoo(df)
-    return df, pet_type, new_level
+    return df

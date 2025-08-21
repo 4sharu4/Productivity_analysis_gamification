@@ -1,52 +1,375 @@
 timestamp,app
-2025-08-21 14:40:39,pet_tracker - Visual Studio Code
-2025-08-21 14:40:54,"Inbox (6,856) - 4sharu4@gmail.com - Gmail - Google Chrome"
-2025-08-21 14:41:09,BITrial
-2025-08-21 14:41:24,BITrial
-2025-08-21 14:41:39,Microsoft To Do
-2025-08-21 14:41:54,Microsoft To Do
-2025-08-21 14:42:09,Microsoft To Do
-2025-08-21 14:42:24,Microsoft To Do
-2025-08-21 14:42:39,Microsoft To Do
-2025-08-21 14:42:54,Microsoft To Do
-2025-08-21 14:43:09,Microsoft To Do
-2025-08-21 14:43:24,Microsoft To Do
-2025-08-21 14:43:39,BITrial
-2025-08-21 14:43:54,GitHub README creation - Google Chrome
-2025-08-21 14:44:09,youtube.com/watch?v=BYTxPFj44uo&list=RDBYTxPFj44uo&start_radio=1 - Google Chrome
-2025-08-21 14:44:24,how to power bi kpi - YouTube - Google Chrome
-2025-08-21 14:44:39,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:44:54,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:45:09,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:45:24,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:45:39,BITrial
-2025-08-21 14:45:54,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:46:09,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:46:24,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:46:39,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:46:54,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:47:09,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:47:24,How to Power BI - YouTube - Google Chrome
-2025-08-21 14:47:39,how to power bi kpi - YouTube - Google Chrome
-2025-08-21 14:47:54,how to power bi kpi - YouTube - Google Chrome
-2025-08-21 14:48:09,how to power bi channel kpi - YouTube - Google Chrome
-2025-08-21 14:48:24,how to power bi channel kpi - YouTube - Google Chrome
-2025-08-21 14:48:39,how to power bi channel kpi - YouTube - Google Chrome
-2025-08-21 14:48:54,how to power bi kpi - YouTube - Google Chrome
-2025-08-21 14:49:09,how to power bi kpi - YouTube - Google Chrome
-2025-08-21 14:49:24,Improve your VISUALS I How to turn a MEASURE into a KPI in Power BI - YouTube - Google Chrome
-2025-08-21 14:49:39,Improve your VISUALS I How to turn a MEASURE into a KPI in Power BI - YouTube - Google Chrome
-2025-08-21 14:49:54,Build THIS! Report DESIGN in Power BI | FULL TUTORIAL - YouTube - Google Chrome
-2025-08-21 14:50:09,A CARD VISUAL you haven’t SEEN before | MULTIPLE KPIs with line breaks ON HOVER in Power BI - YouTube - Google Chrome
-2025-08-21 14:50:24,A CARD VISUAL you haven’t SEEN before | MULTIPLE KPIs with line breaks ON HOVER in Power BI - YouTube - Google Chrome
-2025-08-21 14:50:39,A CARD VISUAL you haven’t SEEN before | MULTIPLE KPIs with line breaks ON HOVER in Power BI - YouTube - Google Chrome
-2025-08-21 14:50:54,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
-2025-08-21 14:51:09,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
-2025-08-21 14:51:24,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
-2025-08-21 14:51:39,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
-2025-08-21 14:51:54,"Inbox (6,856) - 4sharu4@gmail.com - Gmail - Google Chrome"
-2025-08-21 14:52:09,pet_tracker - Visual Studio Code
-2025-08-21 14:52:24,pet_tracker - Visual Studio Code
-2025-08-21 14:52:39,pet_tracker - Visual Studio Code
-2025-08-21 14:52:54,pet_tracker - Visual Studio Code
-2025-08-21 14:53:09,pet_tracker - Visual Studio Code
+2025-08-22 14:40:39,pet_tracker - Visual Studio Code
+2025-08-22 14:40:54,"Inbox (6,856) - 4sharu4@gmail.com - Gmail - Google Chrome"
+2025-08-22 14:41:09,BITrial
+2025-08-22 14:41:24,BITrial
+2025-08-22 14:41:39,Microsoft To Do
+2025-08-22 14:41:54,Microsoft To Do
+2025-08-22 14:42:09,Microsoft To Do
+2025-08-22 14:42:24,Microsoft To Do
+2025-08-22 14:42:39,Microsoft To Do
+2025-08-22 14:42:54,Microsoft To Do
+2025-08-22 14:43:09,Microsoft To Do
+2025-08-22 14:43:24,Microsoft To Do
+2025-08-22 14:43:39,BITrial
+2025-08-22 14:43:54,GitHub README creation - Google Chrome
+2025-08-22 14:44:09,youtube.com/watch?v=BYTxPFj44uo&list=RDBYTxPFj44uo&start_radio=1 - Google Chrome
+2025-08-22 14:44:24,how to power bi kpi - YouTube - Google Chrome
+2025-08-22 14:44:39,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:44:54,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:45:09,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:45:24,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:45:39,BITrial
+2025-08-22 14:45:54,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:46:09,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:46:24,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:46:39,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:46:54,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:47:09,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:47:24,How to Power BI - YouTube - Google Chrome
+2025-08-22 14:47:39,how to power bi kpi - YouTube - Google Chrome
+2025-08-22 14:47:54,how to power bi kpi - YouTube - Google Chrome
+2025-08-22 14:48:09,how to power bi channel kpi - YouTube - Google Chrome
+2025-08-22 14:48:24,how to power bi channel kpi - YouTube - Google Chrome
+2025-08-22 14:48:39,how to power bi channel kpi - YouTube - Google Chrome
+2025-08-22 14:48:54,how to power bi kpi - YouTube - Google Chrome
+2025-08-22 14:49:09,how to power bi kpi - YouTube - Google Chrome
+2025-08-22 14:49:24,Improve your VISUALS I How to turn a MEASURE into a KPI in Power BI - YouTube - Google Chrome
+2025-08-22 14:49:39,Improve your VISUALS I How to turn a MEASURE into a KPI in Power BI - YouTube - Google Chrome
+2025-08-22 14:49:54,Build THIS! Report DESIGN in Power BI | FULL TUTORIAL - YouTube - Google Chrome
+2025-08-22 14:50:09,A CARD VISUAL you haven’t SEEN before | MULTIPLE KPIs with line breaks ON HOVER in Power BI - YouTube - Google Chrome
+2025-08-22 14:50:24,A CARD VISUAL you haven’t SEEN before | MULTIPLE KPIs with line breaks ON HOVER in Power BI - YouTube - Google Chrome
+2025-08-22 14:50:39,A CARD VISUAL you haven’t SEEN before | MULTIPLE KPIs with line breaks ON HOVER in Power BI - YouTube - Google Chrome
+2025-08-22 14:50:54,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
+2025-08-22 14:51:09,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
+2025-08-22 14:51:24,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
+2025-08-22 14:51:39,PERSONALIZE VISUALS and PERSPECTIVES in Power BI - Make every report viewer happy :) - YouTube - Google Chrome
+2025-08-22 14:51:54,"Inbox (6,856) - 4sharu4@gmail.com - Gmail - Google Chrome"
+2025-08-22 14:52:09,pet_tracker - Visual Studio Code
+2025-08-22 14:52:24,pet_tracker - Visual Studio Code
+2025-08-22 14:52:39,pet_tracker - Visual Studio Code
+2025-08-22 14:52:54,pet_tracker - Visual Studio Code
+2025-08-22 14:53:09,pet_tracker - Visual Studio Code
+2025-08-22 19:56:02,pet_tracker - Visual Studio Code
+2025-08-22 19:56:17,BITrial
+2025-08-22 19:56:32,BITrial
+2025-08-22 19:56:47,BITrial
+2025-08-22 19:57:02,BITrial
+2025-08-22 19:57:17,Setup app.py and assets - Google Chrome
+2025-08-22 19:57:33,Setup app.py and assets - Google Chrome
+2025-08-22 19:57:48,Setup app.py and assets - Google Chrome
+2025-08-22 19:58:03,Setup app.py and assets - Google Chrome
+2025-08-22 19:58:18,Setup app.py and assets - Google Chrome
+2025-08-22 19:58:33,Setup app.py and assets - Google Chrome
+2025-08-22 19:58:48,Setup app.py and assets - Google Chrome
+2025-08-22 19:59:03,Setup app.py and assets - Google Chrome
+2025-08-22 19:59:18,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 19:59:33,General - Google Chrome
+2025-08-22 19:59:48,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:00:03,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:00:18,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:00:33,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:00:48,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:01:03,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:01:18,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:01:33,Unique Python project ideas - Google Chrome
+2025-08-22 20:01:48,Unique Python project ideas - Google Chrome
+2025-08-22 20:02:03,Unique Python project ideas - Google Chrome
+2025-08-22 20:02:18,Setup app.py and assets - Google Chrome
+2025-08-22 20:02:33,how to add mit license github - Google Search - Google Chrome
+2025-08-22 20:02:48,how to add mit license github - Google Search - Google Chrome
+2025-08-22 20:03:03,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:03:18,Add a license to 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:03:33,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:03:48,New File at / · 4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:04:03,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:04:18,Setup app.py and assets - Google Chrome
+2025-08-22 20:04:33,Setup app.py and assets - Google Chrome
+2025-08-22 20:04:48,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:05:03,pet_tracker - Visual Studio Code
+2025-08-22 20:05:18,pet_tracker - Visual Studio Code
+2025-08-22 20:05:33,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:05:48,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:06:03,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:06:18,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:06:33,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:06:48,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:07:03,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:07:18,4sharu4/Productivity_analysis_gamification - Google Chrome
+2025-08-22 20:07:33,4sharu4/Productivity_analysis_gamification: Productivity_analysis_gamification tracks your daily computer usage and motivates focus by evolving virtual pets based on your productive time through engag
+2025-08-22 20:07:48,4sharu4/bangalore-weather-forecast: Weather Forecasting project using Power BI  Python  GitHub  and ML to train and predict weather parameters. - Google Chrome
+2025-08-22 20:08:03,4sharu4/Productivity_analysis_gamification: Productivity_analysis_gamification tracks your daily computer usage and motivates focus by evolving virtual pets based on your productive time through engag
+2025-08-22 20:08:18,4sharu4/Productivity_analysis_gamification: Productivity_analysis_gamification tracks your daily computer usage and motivates focus by evolving virtual pets based on your productive time through engag
+2025-08-22 20:08:33,4sharu4/Productivity_analysis_gamification: Productivity_analysis_gamification tracks your daily computer usage and motivates focus by evolving virtual pets based on your productive time through engag
+2025-08-22 20:08:48,Setup app.py and assets - Google Chrome
+2025-08-22 20:09:03,Microsoft To Do
+2025-08-22 20:09:18,BITrial
+2025-08-22 20:09:33,BITrial
+2025-08-22 20:09:48,BITrial
+2025-08-22 20:10:03,BITrial
+2025-08-22 20:10:18,BITrial
+2025-08-22 20:10:33,BITrial
+2025-08-22 20:10:48,BITrial
+2025-08-22 20:11:03,BITrial
+2025-08-22 20:11:18,BITrial
+2025-08-22 20:11:33,BITrial
+2025-08-22 20:11:48,BITrial
+2025-08-22 20:12:03,BITrial
+2025-08-22 20:12:18,BITrial
+2025-08-22 20:12:33,BITrial
+2025-08-22 20:12:48,BITrial
+2025-08-22 20:13:03,BITrial
+2025-08-22 20:13:18,BITrial
+2025-08-22 20:13:33,BITrial
+2025-08-22 20:13:48,BITrial
+2025-08-22 20:14:03,BITrial
+2025-08-22 20:14:18,BITrial
+2025-08-22 20:14:33,BITrial
+2025-08-22 20:14:48,BITrial
+2025-08-22 20:15:03,BITrial
+2025-08-22 20:15:18,BITrial
+2025-08-22 20:15:33,BITrial
+2025-08-22 20:15:48,BITrial
+2025-08-22 20:16:03,BITrial
+2025-08-22 20:16:18,BITrial
+2025-08-22 20:16:33,BITrial
+2025-08-22 20:16:48,BITrial
+2025-08-22 20:17:03,BITrial
+2025-08-22 20:17:18,BITrial
+2025-08-22 20:17:33,BITrial
+2025-08-22 20:17:48,BITrial
+2025-08-22 20:18:03,BITrial
+2025-08-22 20:18:18,BITrial
+2025-08-22 20:18:33,BITrial
+2025-08-22 20:18:48,BITrial
+2025-08-22 20:19:03,BITrial
+2025-08-22 20:19:18,BITrial
+2025-08-22 20:19:33,BITrial
+2025-08-22 20:19:48,BITrial
+2025-08-22 20:20:03,BITrial
+2025-08-22 20:20:18,BITrial
+2025-08-22 20:20:33,BITrial
+2025-08-22 20:20:48,BITrial
+2025-08-22 20:21:03,BITrial
+2025-08-22 20:21:18,BITrial
+2025-08-22 20:21:33,BITrial
+2025-08-22 20:21:48,BITrial
+2025-08-22 20:22:03,BITrial
+2025-08-22 20:22:18,BITrial
+2025-08-22 20:22:33,BITrial
+2025-08-22 20:22:48,BITrial
+2025-08-22 20:23:03,BITrial
+2025-08-22 20:23:18,BITrial
+2025-08-22 20:23:33,BITrial
+2025-08-22 20:23:48,BITrial
+2025-08-22 20:24:03,BITrial
+2025-08-22 20:24:18,BITrial
+2025-08-22 20:24:33,BITrial
+2025-08-22 20:24:48,BITrial
+2025-08-22 20:25:03,BITrial
+2025-08-22 20:25:18,Untitled - Google Chrome
+2025-08-22 20:25:33,4sharu4/Productivity_analysis_gamification: Productivity_analysis_gamification tracks your daily computer usage and motivates focus by evolving virtual pets based on your productive time through engag
+2025-08-22 20:25:48,Untitled - Google Chrome
+2025-08-22 20:26:03,BITrial
+2025-08-22 20:26:18,BITrial
+2025-08-22 20:26:33,BITrial
+2025-08-22 20:26:48,BITrial
+2025-08-22 20:27:03,BITrial
+2025-08-22 20:27:18,BITrial
+2025-08-22 20:27:33,BITrial
+2025-08-22 20:27:48,BITrial
+2025-08-22 20:28:03,BITrial
+2025-08-22 20:28:18,BITrial
+2025-08-22 20:28:33,192.168.1.8 - Google Chrome
+2025-08-22 20:28:48,BITrial
+2025-08-22 20:29:03,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:29:18,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:29:33,pet_tracker - Visual Studio Code
+2025-08-22 20:29:48,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:30:03,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:30:18,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:30:33,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:30:48,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:31:03,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:31:18,Save As
+2025-08-22 20:31:33,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:31:48,BITrial
+2025-08-22 20:32:03,Open
+2025-08-22 20:32:18,BITrial
+2025-08-22 20:32:34,BITrial
+2025-08-22 20:32:49,BITrial
+2025-08-22 20:33:04,BITrial
+2025-08-22 20:33:19,BITrial
+2025-08-22 20:33:34,BITrial
+2025-08-22 20:33:49,BITrial
+2025-08-22 20:34:04,BITrial
+2025-08-22 20:34:19,BITrial
+2025-08-22 20:34:34,BITrial
+2025-08-22 20:34:49,BITrial
+2025-08-22 20:35:04,adventure works logo - Google Search - Google Chrome
+2025-08-22 20:35:19,(1) How to Power BI - YouTube - Google Chrome
+2025-08-22 20:35:34,(1) Power BI Report Dark Theme Demo - YouTube - Google Chrome
+2025-08-22 20:35:49,(1) Power BI Report Dark Theme Demo - YouTube - Google Chrome
+2025-08-22 20:36:04,(1) Power BI Report Dark Theme Demo - YouTube - Google Chrome
+2025-08-22 20:36:21,(1) My TOP 3 variations of Donut Charts in 3 minutes in Power BI - YouTube - Google Chrome
+2025-08-22 20:36:36,(1) My TOP 3 variations of Donut Charts in 3 minutes in Power BI - YouTube - Google Chrome
+2025-08-22 20:36:51,(1) YouTube - Google Chrome
+2025-08-22 20:37:06,BITrial
+2025-08-22 20:37:21,BITrial
+2025-08-22 20:37:36,BITrial
+2025-08-22 20:37:51,BITrial
+2025-08-22 20:38:06,BITrial
+2025-08-22 20:38:21,BITrial
+2025-08-22 20:38:36,BITrial
+2025-08-22 20:38:51,BITrial
+2025-08-22 20:39:06,BITrial
+2025-08-22 20:39:21,BITrial
+2025-08-22 20:39:36,BITrial
+2025-08-22 20:39:51,BITrial
+2025-08-22 20:40:06,BITrial
+2025-08-22 20:40:21,BITrial
+2025-08-22 20:40:36,BITrial
+2025-08-22 20:40:51,BITrial
+2025-08-22 20:41:06,BITrial
+2025-08-22 20:41:21,BITrial
+2025-08-22 20:41:36,BITrial
+2025-08-22 20:41:51,BITrial
+2025-08-22 20:42:06,BITrial
+2025-08-22 20:42:21,BITrial
+2025-08-22 20:42:36,BITrial
+2025-08-22 20:42:51,BITrial
+2025-08-22 20:43:06,BITrial
+2025-08-22 20:43:21,BITrial
+2025-08-22 20:43:36,BITrial
+2025-08-22 20:43:51,BITrial
+2025-08-22 20:44:06,BITrial
+2025-08-22 20:44:21,BITrial
+2025-08-22 20:44:36,BITrial
+2025-08-22 20:44:51,BITrial
+2025-08-22 20:45:06,BITrial
+2025-08-22 20:45:21,BITrial
+2025-08-22 20:45:36,BITrial
+2025-08-22 20:45:51,BITrial
+2025-08-22 20:46:06,BITrial
+2025-08-22 20:46:21,BITrial
+2025-08-22 20:46:36,BITrial
+2025-08-22 20:46:51,BITrial
+2025-08-22 20:47:06,BITrial
+2025-08-22 20:47:21,BITrial
+2025-08-22 20:47:36,BITrial
+2025-08-22 20:47:51,BITrial
+2025-08-22 20:48:06,BITrial
+2025-08-22 20:48:21,BITrial
+2025-08-22 20:48:36,BITrial
+2025-08-22 20:48:51,BITrial
+2025-08-22 20:49:06,BITrial
+2025-08-22 20:49:21,BITrial
+2025-08-22 20:49:36,BITrial
+2025-08-22 20:49:51,BITrial
+2025-08-22 20:50:06,BITrial
+2025-08-22 20:50:21,BITrial
+2025-08-22 20:50:36,BITrial
+2025-08-22 20:50:51,BITrial
+2025-08-22 20:51:06,BITrial
+2025-08-22 20:51:21,BITrial
+2025-08-22 20:51:36,BITrial
+2025-08-22 20:51:51,BITrial
+2025-08-22 20:52:06,BITrial
+2025-08-22 20:52:21,BITrial
+2025-08-22 20:52:36,BITrial
+2025-08-22 20:52:51,cost vs profit vs revenue - Google Search - Google Chrome
+2025-08-22 20:53:06,cost vs profit vs revenue - Google Search - Google Chrome
+2025-08-22 20:53:21,cost vs profit vs revenue - Google Search - Google Chrome
+2025-08-22 20:53:36,cost vs profit vs revenue - Google Search - Google Chrome
+2025-08-22 20:53:51,cost vs profit vs revenue - Google Search - Google Chrome
+2025-08-22 20:54:06,BITrial
+2025-08-22 20:54:21,BITrial
+2025-08-22 20:54:36,BITrial
+2025-08-22 20:54:51,BITrial
+2025-08-22 20:55:06,BITrial
+2025-08-22 20:55:21,BITrial
+2025-08-22 20:55:36,BITrial
+2025-08-22 20:55:51,BITrial
+2025-08-22 20:56:06,BITrial
+2025-08-22 20:56:21,BITrial
+2025-08-22 20:56:36,BITrial
+2025-08-22 20:56:51,BITrial
+2025-08-22 20:57:06,BITrial
+2025-08-22 20:57:21,BITrial
+2025-08-22 20:57:36,BITrial
+2025-08-22 20:57:51,BITrial
+2025-08-22 20:58:06,BITrial
+2025-08-22 20:58:21,BITrial
+2025-08-22 20:58:36,BITrial
+2025-08-22 20:58:51,BITrial
+2025-08-22 20:59:06,BITrial
+2025-08-22 20:59:21,BITrial
+2025-08-22 20:59:36,BITrial
+2025-08-22 20:59:51,BITrial
+2025-08-22 21:00:06,BITrial
+2025-08-22 21:00:21,BITrial
+2025-08-22 21:00:36,BITrial
+2025-08-22 21:00:51,BITrial
+2025-08-22 21:01:06,BITrial
+2025-08-22 21:01:21,BITrial
+2025-08-22 21:01:36,BITrial
+2025-08-22 21:01:51,BITrial
+2025-08-22 21:02:06,BITrial
+2025-08-22 21:02:22,BITrial
+2025-08-22 21:02:37,BITrial
+2025-08-22 21:02:52,BITrial
+2025-08-22 21:03:07,BITrial
+2025-08-22 21:03:22,BITrial
+2025-08-22 21:03:37,BITrial
+2025-08-22 21:03:52,double sided bar grpah power bi - Google Search - Google Chrome
+2025-08-22 21:04:07,(1) Power BI Bar chart for Comparison - YouTube - Google Chrome
+2025-08-22 21:04:22,(1) Power BI Bar chart for Comparison - YouTube - Google Chrome
+2025-08-22 21:04:37,(1) Power BI Bar chart for Comparison - YouTube - Google Chrome
+2025-08-22 21:04:52,YouTube - Google Chrome
+2025-08-22 21:05:07,BITrial
+2025-08-22 21:05:22,Unknown
+2025-08-22 21:05:37,Unknown
+2025-08-22 21:05:52,BITrial
+2025-08-22 21:06:07,BITrial
+2025-08-22 21:06:22,BITrial
+2025-08-22 21:06:37,BITrial
+2025-08-22 21:06:52,BITrial
+2025-08-22 21:07:07,BITrial
+2025-08-22 21:07:22,BITrial
+2025-08-22 21:07:37,BITrial
+2025-08-22 21:07:52,BITrial
+2025-08-22 21:08:07,BITrial
+2025-08-22 21:08:22,BITrial
+2025-08-22 21:08:37,BITrial
+2025-08-22 21:08:52,BITrial
+2025-08-22 21:09:07,BITrial
+2025-08-22 21:09:22,BITrial
+2025-08-22 21:09:37,Unknown
+2025-08-22 21:09:52,Unknown
+2025-08-22 21:10:07,BITrial
+2025-08-22 21:10:22,Unknown
+2025-08-22 21:10:37,BITrial
+2025-08-22 21:10:52,Unknown
+2025-08-22 21:11:07,BITrial
+2025-08-22 21:11:22,BITrial
+2025-08-22 21:11:37,BITrial
+2025-08-22 21:11:52,BITrial
+2025-08-22 21:12:07,BITrial
+2025-08-22 21:12:22,BITrial
+2025-08-22 21:12:37,BITrial
+2025-08-22 21:12:52,BITrial
+2025-08-22 21:13:07,BITrial
+2025-08-22 21:13:22,BITrial
+2025-08-22 21:13:37,BITrial
+2025-08-22 21:13:52,BITrial
+2025-08-22 21:14:07,BITrial
+2025-08-22 21:14:22,BITrial
+2025-08-22 21:14:37,BITrial
+2025-08-22 21:14:52,BITrial
+2025-08-22 21:15:07,BITrial
+2025-08-22 21:15:22,BITrial
+2025-08-22 21:15:37,BITrial
+2025-08-22 21:15:52,BITrial
+2025-08-22 21:16:07,BITrial
+2025-08-22 21:16:22,BITrial
+2025-08-22 21:16:37,pet_tracker - Visual Studio Code
