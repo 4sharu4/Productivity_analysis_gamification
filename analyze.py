@@ -1,22 +1,75 @@
-# analyze.py
-from pathlib import Path
 from datetime import datetime, timedelta
 import pandas as pd
+import random
+import os
 
-from pet_manager import load_zoo, record_new_pet, level_up_last_pet
-
+# Constants
 LOG_FILE = "usage_log.csv"
-SAMPLE_SECONDS = 15        # MUST match tracker.py sampling interval
+ZOO_FILE = "pets.csv"
+DAILY_SUMMARY = "daily_summary.csv"
 ACTIVITY_FILE = "activity_dates.csv"
 
-# Streak days that unlock a new pet
-NEW_PET_STREAKS = {1, 2, 5, 10, 20, 30, 50, 100}
-# Minutes per day that will level up the latest pet
-LEVELUP_MINUTES = 90
+SAMPLE_SECONDS = 15  # Should match tracker.py
+ACCUMULATION_FILE = "accumulated_minutes.csv"
 
-def _mark_activity_today():
+# Thresholds
+EVOLUTION_THRESHOLD = 14 * 60  # 14 hours in minutes
+MAX_LEVEL = 3
+
+# Streak-based pet unlocks
+NEW_PET_STREAKS = {1, 2, 5, 10, 15, 20, 30, 50, 100}
+
+# Productivity mapping
+PRODUCTIVITY = {
+    "vs code": "Good",
+    "email": "Good",
+    "docs": "Good",
+    "notepad": "Neutral",
+    "youtube": "Bad",
+    "netflix": "Bad",
+    "games": "Bad",
+    "other": "Neutral"
+}
+
+# Pet pool (use game-style names that match your assets)
+PET_TYPES = ["cat", "dog", "fox", "dragon", "panda", "turtle"]
+
+# ----------- Helper Functions -----------
+
+def clean_app_name(name):
+    name = str(name).lower()
+    if "youtube" in name:
+        return "YouTube"
+    elif "chrome" in name:
+        return "Chrome"
+    elif "vs code" in name or "visual studio" in name:
+        return "VS Code"
+    elif "mail" in name:
+        return "Email"
+    elif "netflix" in name:
+        return "Netflix"
+    elif "notepad" in name:
+        return "Notepad"
+    elif "game" in name:
+        return "Games"
+    else:
+        return "Other"
+
+def compute_streak():
+    if not os.path.exists(ACTIVITY_FILE):
+        return 0
+    df = pd.read_csv(ACTIVITY_FILE)
+    dates = sorted(pd.to_datetime(df["date"]).dt.date.tolist())
+    streak = 0
+    cur = datetime.now().date()
+    while cur in dates:
+        streak += 1
+        cur -= timedelta(days=1)
+    return streak
+
+def mark_activity_today():
     today = datetime.now().date().strftime("%Y-%m-%d")
-    if Path(ACTIVITY_FILE).exists():
+    if os.path.exists(ACTIVITY_FILE):
         df = pd.read_csv(ACTIVITY_FILE)
     else:
         df = pd.DataFrame(columns=["date"])
@@ -24,71 +77,84 @@ def _mark_activity_today():
         df.loc[len(df)] = [today]
         df.to_csv(ACTIVITY_FILE, index=False)
 
-def _compute_streak():
-    """Return number of consecutive days with activity ending today."""
-    if not Path(ACTIVITY_FILE).exists():
-        return 0
-    df = pd.read_csv(ACTIVITY_FILE)
-    if df.empty:
-        return 0
-    dates = sorted(pd.to_datetime(df["date"]).dt.date.tolist())
-    streak = 0
-    cur = datetime.now().date()
-    while cur in dates:
-        streak += 1
-        cur = cur - timedelta(days=1)
-    return streak
+# ----------- Main Analysis -----------
 
 def analyze_today():
-    if not Path(LOG_FILE).exists():
-        print("No usage_log.csv found. Run tracker.py first and let it log some data.")
+    if not os.path.exists(LOG_FILE):
+        print("No usage_log.csv found.")
         return
 
     df = pd.read_csv(LOG_FILE)
-    if df.empty:
-        print("Log file is empty. Let tracker run longer.")
-        return
-
-    # Ensure timestamp column is datetime
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
     df = df.dropna(subset=["timestamp"])
+    df["app"] = df["app"].apply(clean_app_name)
+
     today = datetime.now().date()
     df_today = df[df["timestamp"].dt.date == today]
-
     if df_today.empty:
-        print("No entries for today yet. Run tracker and try again later.")
+        print("No usage data for today.")
         return
 
-    total_minutes = len(df_today) * SAMPLE_SECONDS / 60.0
+    # Time calculations
+    total_samples = len(df_today)
+    total_minutes = total_samples * SAMPLE_SECONDS / 60.0
 
-    # Per-window summary (for dashboard)
-    counts = df_today["app"].value_counts().rename_axis("app").reset_index(name="samples")
-    counts["minutes"] = counts["samples"] * SAMPLE_SECONDS / 60.0
-    counts.sort_values("minutes", ascending=False).to_csv("daily_summary.csv", index=False)
+    summary = df_today["app"].value_counts().rename_axis("app").reset_index(name="samples")
+    summary["minutes"] = summary["samples"] * SAMPLE_SECONDS / 60.0
+    summary["productivity"] = summary["app"].apply(lambda x: PRODUCTIVITY.get(x.lower(), "Neutral"))
+    summary.sort_values("minutes", ascending=False).to_csv(DAILY_SUMMARY, index=False)
 
-    # Mark today's activity and compute streak
-    _mark_activity_today()
-    streak = _compute_streak()
+    # Save total accumulation (rolling across days)
+    if os.path.exists(ACCUMULATION_FILE):
+        acc_df = pd.read_csv(ACCUMULATION_FILE)
+    else:
+        acc_df = pd.DataFrame(columns=["date", "minutes"])
 
-    print(f"Today's minutes tracked: {total_minutes:.1f} | Current streak: {streak} day(s)")
+    acc_df.loc[len(acc_df)] = [str(today), total_minutes]
+    acc_df.to_csv(ACCUMULATION_FILE, index=False)
 
-    # Load zoo and apply milestones
-    zoo = load_zoo()
-    did = False
+    mark_activity_today()
+    streak = compute_streak()
+    print(f"Tracked {total_minutes:.1f} minutes today — streak: {streak} day(s)")
 
-    # If first pet ever OR current streak matches a new-pet milestone -> unlock
+    # Load or init zoo
+    if os.path.exists(ZOO_FILE):
+        zoo = pd.read_csv(ZOO_FILE)
+    else:
+        zoo = pd.DataFrame(columns=["date", "pet", "level"])
+
+    # Unlock pet if:
+    # - First day
+    # - OR streak matches milestone
+    pet_unlocked = False
     if zoo.empty or streak in NEW_PET_STREAKS:
-        zoo, pet_type, level = record_new_pet(zoo)
-        print(f"🎉 New pet unlocked: {pet_type} (Level {level}) — streak {streak}")
-        did = True
-    # Else if today we logged enough minutes -> level up last pet
-    elif total_minutes >= LEVELUP_MINUTES:
-        zoo, pet_type, level = level_up_last_pet(zoo)
-        print(f"⬆️ Pet leveled up: {pet_type} (Level {level}) — {total_minutes:.0f} min today")
-        did = True
+        new_pet = random.choice(PET_TYPES)
+        zoo.loc[len(zoo)] = [str(today), new_pet, 1]
+        print(f"🎉 New pet unlocked: {new_pet} (Level 1)")
+        pet_unlocked = True
+    else:
+        # Level up logic
+        num_pets = len(zoo)
+        split_minutes = total_minutes / num_pets
 
-    if not did:
-        print("No new pet or level today — keep going!")
+        for i in zoo.index:
+            current_level = zoo.at[i, "level"]
+            if current_level < MAX_LEVEL:
+                if split_minutes >= EVOLUTION_THRESHOLD:
+                    zoo.at[i, "level"] += 1
+                    print(f"⬆️ {zoo.at[i, 'pet']} leveled up to {zoo.at[i, 'level']}")
+                    break
+        else:
+            # No pet leveled up AND all at max level → unlock new pet
+            if all(zoo["level"] >= MAX_LEVEL):
+                new_pet = random.choice(PET_TYPES)
+                zoo.loc[len(zoo)] = [str(today), new_pet, 1]
+                print(f"✨ New generation begins: {new_pet} (Level 1)")
+
+    # Save zoo
+    zoo.to_csv(ZOO_FILE, index=False)
+
+# ----------- Run Script -----------
 
 if __name__ == "__main__":
     analyze_today()

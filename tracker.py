@@ -29,8 +29,9 @@ def log_usage():
     while True:
         app_title = get_active_window_title()
         ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        row = pd.DataFrame([[ts, app_title]], columns=["timestamp", "app"])
-        row.to_csv(LOG_FILE, mode="a", header=False, index=False)
+        # Append row directly to CSV without full dataframe overhead
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            f.write(f"{ts},{app_title.replace(',', ' ')}\n")
         time.sleep(SAMPLE_SECONDS)
 
 if __name__ == "__main__":
