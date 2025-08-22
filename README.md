@@ -1,5 +1,9 @@
 # Productitvity_analysis_gamification 🐾  
-Gamified Personal Productivity Tracker with Optional Automation  
+Gamified Personal Productivity Tracker with Optional Automation
+---
+## 📊 Sample Image
+
+![Initial_Report](Initial_Report_Image.png)
 
 ---
 
