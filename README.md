@@ -8,23 +8,13 @@ Productitvity_analysis_gamification is an innovative productivity and behavior a
 
 ---
 
-## 🎯 Why This Project?
+## 🎯 Features & Highlights
 
-- **Real-world productivity insight**: Track how you spend time on your computer daily.  
-- **Gamification to motivate**: Virtual pets evolve based on your productive behavior, encouraging consistent focus.  
-- **Modular by design**: Works as a fully local tracker; automation and hosting are optional extensions.  
-- **FAANG-worthy skills showcase**: Demonstrates scripting, data analytics, gamification, and local data orchestration.  
-- **Scalable & extensible**: Easily integrates with dashboards or notifications and can be expanded to team or social use cases.  
-
----
-
-## 📋 Features
-
-- **Local Usage Tracking**: Logs active application/window usage every 15 seconds.  
-- **Daily Analytics**: Aggregates usage data into productive and non-productive categories.  
-- **Pet Gamification**: Unlocks and evolves pets based on total productive hours.  
-- **Streak & Milestone Recognition**: Unlock new pets at defined usage streaks.  
-- **Data Visualization Ready**: Generates CSV reports for detailed app usage, productivity ratings, and pet statuses.  
+- **Local Usage Tracking**: Tracks app usage every 15 secs and classifies behavior (Good/Bad/Neutral) 
+- **Pet Gamification**: Rewards focus time with evolving and unlocking virtual pets 
+- **Streak & Milestone Recognition**: Daily summaries + milestone streaks, pet status and productivity ratings. 
+- **Enhancements Possible**: Optional automation via GitHub Actions / Task Scheduler, introducing more engaging pet features. 
+- **Data Visualization Ready**: Streamlit dashboard for clean, gamified visual insights
 - **Configurable Thresholds**: Adjust accumulation thresholds, productivity mappings, and pet evolution stages.  
 
 ---
