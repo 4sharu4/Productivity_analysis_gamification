@@ -1,11 +1,6 @@
 # Productitvity_analysis_gamification 🐾  
 Gamified Personal Productivity Tracker with Optional Automation
 ---
-## 📊 Sample Image
-
-![Initial_Report](Initial_Report_Image.png)
-
----
 
 ## 🚀 Project Overview  
 Productitvity_analysis_gamification is an innovative productivity and behavior analytics project designed to help users understand and improve their daily computer usage through gamification. By tracking active window usage locally and evolving virtual pets based on accumulated productive time, this project transforms mundane usage statistics into an engaging, motivating experience.
@@ -134,6 +129,11 @@ pet-zoo-tracker/
 
 ---
 
+## 📊 Sample Image
+
+![Initial_Report]<img src="Initial_Report_Image.png">
+
+---
 
 ## 🤝 Contributing
 
