@@ -141,12 +141,6 @@ Contributions and feature requests are welcome! Feel free to open issues or subm
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
-
----
-
 ## 🔗 References
 
 * [pygetwindow](https://github.com/asweigart/pygetwindow) for active window tracking
